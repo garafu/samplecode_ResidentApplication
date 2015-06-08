@@ -52,6 +52,9 @@
         /// <param name="e">イベントデータ</param>
         private void toolStripMenuItem_Exit_Click(object sender, EventArgs e)
         {
+            // NotifyIcon を非表示
+            this.notifyIcon1.Visible = false;
+
             // 現在のアプリケーションを終了
             Application.Current.Shutdown();
         }
